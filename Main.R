@@ -86,11 +86,11 @@ outpath_cl <- file.path(paste(outpath, "/classification", sep = ""))
 #Prepares data for both Classification and Regression Models
 #If data are zero-rich the number of zeros is reduced to twice
 #the number of presences
-source(paste(codePath, "/PostFireLogging_RF_TrainingDataImport_NoSplit.R", sep = ""))
+source(paste(codePath, "/PostFireLogging_RF_TrainingDataImport.R", sep = ""))
 head(MasterTrainset)
 #######################
 ############################
 
 ##Run classification model
-source(paste(codePath, "/PostFireLogging_RF_Classification_OOBonly.R", sep = ""))
+source(paste(codePath, "/PostFireLogging_RF_Classification.R", sep = ""))
 
