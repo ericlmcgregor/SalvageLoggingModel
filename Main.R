@@ -83,9 +83,6 @@ outpath_cl <- file.path(paste(outpath, "/classification", sep = ""))
 ####################BEGIN RUNNING MODEL MODULES#####################
 
 #######Import Training and Test data#########
-#Prepares data for both Classification and Regression Models
-#If data are zero-rich the number of zeros is reduced to twice
-#the number of presences
 source(paste(codePath, "/PostFireLogging_RF_TrainingDataImport.R", sep = ""))
 head(MasterTrainset)
 #######################
